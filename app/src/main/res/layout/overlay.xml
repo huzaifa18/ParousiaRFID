@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:visibility="visible">
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/ripple_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:rb_color="@color/colorGrey"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="4000"
+        app:rb_scale="6">
+
+        <TextView
+            android:id="@+id/tv_overlay_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Huzaifa Asif"
+            android:textColor="@color/colorGreen"
+            android:textSize="38dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_overlay_status"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_overlay_name"
+            android:src="@drawable/ic_done_green" />
+
+        <TextView
+            android:id="@+id/tv_overlay_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_overlay_status"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Marked In"
+            android:textColor="@color/colorGreen"
+            android:textSize="38dp"
+            android:textStyle="bold" />
+
+    </com.skyfishjy.library.RippleBackground>
+
+</RelativeLayout>
