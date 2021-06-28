@@ -40,7 +40,6 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.11.0'
 
     // Lifecycle components
-    def archLifecycleVersion = '1.1.1'
     implementation "android.arch.lifecycle:extensions:$archLifecycleVersion"
     annotationProcessor "android.arch.lifecycle:compiler:$archLifecycleVersion"
 
